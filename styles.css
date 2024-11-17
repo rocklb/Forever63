@@ -1,4 +1,4 @@
-  body {
+   body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #ffffff;
@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f9fce4;
+    background-color: #fbc103;
     color: rgb(0, 0, 0);
     padding: 1rem;
     text-align: center;
@@ -27,7 +27,7 @@
   /* Navigation bar styling */
   .nav-bar {
     display: flex;
-    background: #f9fce4;
+    background: #fbc103;
     padding: 10px;
     list-style: none;
     margin: 0;
@@ -141,14 +141,28 @@
 
 
   footer {
-    background-color: #a3e8e9;
-    color: white;
+    background-color:#fbc103;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 1rem;
-    position: fixed;
+    position: relative; 
     bottom: 0;
     width: 100%;
-}
+    font-size: 0.9rem;
+  } 
+
+  footer a {
+    color: #0b0687;
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  .social-media {
+    margin-top: 0.5rem;
+  }
 
 
   
