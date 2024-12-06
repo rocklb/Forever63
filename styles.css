@@ -5,6 +5,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+
 h1{
   font-size: 48px;
   line-height: 60px;
@@ -109,8 +110,8 @@ body{
 }
 
 #hero{
-  background-image: url("imgs/AdobeStock_964620164.jpeg");
-  height: 60vh;
+  background-image: url("imgs/Men/mainPic.webp");
+  height: 70vh;
   width: 100%;
   background-position: top 25% right 0;
   background-size: cover;
@@ -123,6 +124,15 @@ body{
 
 #hero h4{
   padding: 15px;
+  color:#ffffff;
+}
+
+#hero h3{
+  color:#ffffff
+}
+
+#hero p{
+  color:#ffffff
 }
 
 #hero button{
@@ -130,6 +140,10 @@ background-color: whitesmoke;
 padding: 12px 75px 12px 75px;
 cursor: pointer;
 font-size: 16px;
+}
+
+#hero button a:hover{
+  text-decoration:wavy;
 }
 
 #featured{
@@ -213,43 +227,56 @@ footer a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fbc103;
+    background-color: #E3E6F3;
     color: rgb(0, 0, 0);
-    padding: 1rem;
+    padding: 40px 80px;
     text-align: center;
   }
   
   /* Title Styling */
   header h1 {
     margin: 0; 
-    font-size: 2rem;
-    font-family:Georgia, 'Times New Roman', Times, serif; 
-    font-weight: bold; 
-    color: #0d0229;
+    font-weight: bold;     
+    font-size: 48px;
+    line-height: 60px;
+    color:rgb(35, 33, 33);
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
 
-  /* Navigation bar styling */
-  .nav-bar {
+  .nav-bar{
     display: flex;
-    background: #fbc103;
-    padding: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav-bar li{
     list-style: none;
-    margin: 0;
-    gap: 1rem;
-    flex: 1;
+    padding: 0 18px;
+    position: relative;
   }
   
-  .nav-bar li {
-    margin-right: 15px;
-  }
-  
-  .nav-bar a {
-    color: rgb(0, 0, 0);
+  .nav-bar a{
     text-decoration: none;
+    font-weight: 500;
+    color: black;
+    transition: 0.3s ease;
+  
   }
-
-  .nav-bar a:hover {
-    text-decoration: underline;
+  
+  .nav-bar a:hover,
+  .nav-bar a.active{
+    color: rgb(46, 158, 158);
+  }
+  
+  .nav-bar a.active::after,
+  .nav-bar a:hover::after{
+    content: "";
+    width: 50%;
+    height: 2px;
+    background: rgb(46, 158, 158);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
   }
 
   main {
@@ -344,4 +371,96 @@ footer a:hover {
 
 .search_bar button:hover {
   background-color: #0056b3;
+}
+
+/* Cart Page */
+#cart table{
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  white-space: nowrap;
+}
+
+#cart table img{
+width: 70px;
+}
+
+ #cart table td:nth-child(1) {
+  width: 100px;
+  text-align: center;
+}
+
+#cart table td:nth-child(2) {
+  width: 150px;
+  text-align: center;
+}
+
+#cart table td:nth-child(3) {
+  width: 250px;
+  text-align: center;
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6) {
+  width: 150px;
+  text-align: center;
+} 
+
+#cart table td:nth-child(5) input{
+  width: 70px;
+  padding: 10px 5px 10px 15px;
+}
+
+#cart table thead{
+  border: 1px solid #E3E6F3;
+  border-left: none;
+  border-right: none;
+}
+
+#cart table thead td{
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 10px 0;
+}
+
+#cart table tbody tr td{
+  padding-top: 15px;
+}
+
+#cart table tbody td{
+  font-size: 13px;
+}
+
+/* cart total */
+#subtotal {
+  width: 50%;
+  margin-bottom: 30px;
+  border: 1px solid #E3E6F3;
+  padding: 30px;
+}
+
+#subtotal table{
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#subtotal table td {
+  width: 50%;
+  border: 1px solid #E3E6F3;
+  padding: 10px;
+  font-size: 13px;
+}
+ 
+#subtotal h3 {
+  padding-bottom: 15px;
+}
+
+/* checkout button */
+#subtotal button{
+  background-color: rgb(46, 158, 158);
+  color:rgb(0, 0, 0);
+  padding: 12px 15px;
 }
