@@ -6,24 +6,97 @@
   <title>Cart - Forever 63</title>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
+  <script src="https://kit.fontawesome.com/15a9a0cae1.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
     <h1>Forever 63</h1>
+
+    <div class="search_bar">
+      <input type="text" placeholder="Search..." id="search">
+        <button type="button">🔍</button>
+    </div>
+
     <nav>
       <ul class="nav-bar">
         <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="cart.html">Cart</a></li>
-        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="products.html">Shop</a></li>
+        <li><a class="active" href="cart.html"> <i class="fa-solid fa-bag-shopping"></i></a></li>
       </ul>
     </nav>
   </header>
+
   <main>
-    <h1>Your Cart</h1>
+    <h1>Checkout</h1>
     <ul id="cart-items"></ul>
     <p id="total-price"></p>
   </main>
+
+  <section id = "cart" class="section-p1">
+    <table width="100%">
+      <thead>
+        <tr>
+          <td>Remove</td>
+          <td>Image</td>
+          <td>Product</td>
+          <td>Price</td>
+          <td>Quantity</td>
+          <td>Subtotal</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+          <td><img src="imgs/Men/BlueButtonUp.webp" alt=""></td>
+          <td>Blue Button Up</td>
+          <td>$19.99</td>
+          <td><input type = "number" value="1"></td>
+          <td>$19.99</td>
+        </tr>
+
+        <tr>
+          <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+          <td><img src="imgs/Men/BlueButtonUp.webp" alt=""></td>
+          <td>Blue Button Up</td>
+          <td>$19.99</td>
+          <td><input type = "number" value="1"></td>
+          <td>$19.99</td>
+        </tr>
+
+        <tr>
+          <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+          <td><img src="imgs/Men/BlueButtonUp.webp" alt=""></td>
+          <td>Blue Button Up</td>
+          <td>$19.99</td>
+          <td><input type = "number" value="1"></td>
+          <td>$19.99</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </section>
+
+  <section id="cart-add" class="section-p1"> 
+    <div id="subtotal">
+      <h3>Cart Total</h3>
+      <table>
+        <tr>
+          <td>Cart Subtotal</td>
+          <td>$222.22</td>
+        </tr>
+        <tr>
+          <td>Shipping</td>
+          <td>Free</td>
+        </tr>
+        <tr>
+          <td><strong>Total</strong></td>
+          <td><strong>$222.22</strong></td>
+        </tr>
+      </table>
+      <button class="normal">Checkout</button>
+    </div>
+  </section>
+
   <footer>
     <p>&copy; 2024 Forever 63. All rights reserved.</p>
     <p>Contact us: <a href="mailto:support@forever63.com">support@forever63.com</a></p>
